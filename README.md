@@ -1,5 +1,13 @@
 # Laporan Praktikum  
-## Simulasi Layanan AWS Menggunakan LocalStack 
+##  LocalStack 
+            Oleh:
+	Nama                 : Rifhani
+	Nim                  : 2023903430040
+	Kelas                : TRKJ 2.B
+	Jurusan              : Teknologi Informasi dan Komputer
+	Program Studi	     : Teknologi Rekayasa Komputer Jaringan
+	Dosen Pembimbing	: Muhammad Davi, S.Kom.,M.CS
+    
 
 
 ###  PENDAHULUAN 
@@ -37,8 +45,52 @@ C. Dasar Teori
 
 
 ###  E. Langkah-Langkah Praktikum
-1.  Pratikum
-    Perintah ini digunakan untuk menjalankan LocalStack dalam mode latar belakang (detached) dan memetakan port 4566 pada container ke port 4566 di komputer lokal. Port ini adalah port default yang digunakan oleh LocalStack untuk menyediakan layanan AWS lokal seperti S3, Lambda, dan DynamoDB. Setelah perintah dijalankan, Docker menghasilkan sebuah ID container yang panjang (40bbeae9cf10...), 
+1. Instalasi
 
-![Tampilan LocalStack](images/img.jpg)
+- Instal Docker dan verifikasi dengan docker --version
+- Instal Python dan pip, - verifikasi dengan python3 --version dan pip3 --version
 
+- Instal AWS CLI: pip3 install awscli --upgrade --user
+
+- Instal LocalStack: pip3 install localstack
+
+2. Konfigurasi AWS CLI
+![alt text](<img (2).jpg>)
+
+2. Menjalankan LocalStack
+![alt text](<img (3).jpg>)
+ 3. Pengujian Layanan AWS Lokal
+ -Buat bucket S3:
+ ![alt text](<img (5)-1.jpg>)
+ 4. Upload file ke S3:
+![alt text](<img (7).jpg>)
+ 5. Membuat REST API
+ ![alt text](<img (8).jpg>)
+ 6. Mendapatkan Root Resource ID
+ ![alt text](<img (9).jpg>)
+ 7.Membuat Resource untuk Data Ingestion
+ ![alt text](<img (10).jpg>)
+ 8. Membuat Metode POST
+ ![alt text](<img (11).jpg>)
+ 9. Membuat dan Mengonfigurasi Fungsi Lambda
+ ![alt text](<img (12).jpg>)
+ 10.   Mengintegrasikan API Gateway dengan Lambda
+ ![alt text](<img (13).jpg>)
+ 11. Menyebarkan API
+ ![alt text](<img (14).jpg>)
+12.  Mengirim Data Uji ke Endpoint
+ ![alt text](<img (15).jpg>)
+ 13. Membuat Tabel DynamoDB
+ ![alt text](<img (16).jpg>)
+ 14.  Memverifikasi Data di DynamoDB
+ ![alt text](<img (17).jpg>)
+ ### Monitoring dan Analisis Data
+  1: Membuat Dashboard dengan Flask
+  ![alt text](<img (18).jpg>)
+  -  Buat File dashboard.py
+![alt text](<img (20).jpg>)
+  - Hasil Web 
+  ![alt text](<img (19)-1.jpg>)
+
+F. Kesimpulan 
+Penggunaan LocalStack memungkinkan pengembang untuk menyimulasikan berbagai layanan AWS secara lokal tanpa biaya dan tanpa perlu koneksi internet ke cloud AWS. Melalui simulasi layanan seperti S3, Lambda, DynamoDB, dan API Gateway, proses pengembangan dan pengujian dapat dilakukan dengan lebih cepat, fleksibel, dan efisien. LocalStack sangat berguna dalam membangun dan menguji sistem cloud-native secara lokal sebelum diterapkan di lingkungan produksi. Praktikum ini membuktikan bahwa LocalStack dapat menjadi alat yang efektif dalam mendukung pengembangan aplikasi berbasis AWS secara mandiri dan hemat sumber daya.
