@@ -41,5 +41,4 @@ C. Dasar Teori
     Perintah ini digunakan untuk menjalankan LocalStack dalam mode latar belakang (detached) dan memetakan port 4566 pada container ke port 4566 di komputer lokal. Port ini adalah port default yang digunakan oleh LocalStack untuk menyediakan layanan AWS lokal seperti S3, Lambda, dan DynamoDB. Setelah perintah dijalankan, Docker menghasilkan sebuah ID container yang panjang (40bbeae9cf10...), 
 
 ![Tampilan LocalStack](images/img.jpg)
-            Gambar 1    
 
