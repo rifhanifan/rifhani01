@@ -38,5 +38,6 @@ C. Dasar Teori
 
 ###  E. Langkah-Langkah Praktikum
 1.  Pratikum
+   
 ![Tampilan LocalStack](img.jpg
 )
